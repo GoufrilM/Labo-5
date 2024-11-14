@@ -1,0 +1,116 @@
+xdiv {
+    border: 2px solid red;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.title {
+    flex: 100%;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.credit{
+    flex: 100%;
+    background-color: black;
+    color: lightsalmon;
+    font-size: 30px;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: "Lilita One", sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    color: darkgrey;
+    text-align: left;
+    padding: 8.5px;
+}
+.tinytitle{
+    font-family: "Lilita One", sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: left;
+    padding: 11px;
+
+}
+.bigbox {
+    flex: 2;
+    border: 3px solid black;
+    background-color: rgba(255, 202, 104, 0.585)
+}
+.smallbox {
+    flex: 1;
+    border: 3px solid black;
+    background-color: rgb(250, 190, 78);
+}
+.box{
+    width: justify;
+    align-content: center;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    height: auto;
+
+    text-align: center;
+}
+.photobox{
+    align-content: center;
+}
+.mainphoto{
+    width: 90%;
+    height: auto;
+    border: 5px  solid lightcoral;
+    outline: 4px solid black; 
+}
+.bigparag {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 12px;
+}
+.smallparag {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    margin: 10px;
+    
+}
+
+@media (max-width: 1500px) 
+{
+    .bigbox{
+        flex: 100%;
+        margin: 5px;
+        height: 33%;
+    }
+    .smallbox{
+        flex: 100%;
+        margin: 5px;
+        height:  17%;
+    }
+    .bigparag{
+        font-size: 25px;
+    }
+    .smallparag{
+        max-width: 80%;
+        font-size: 22px;
+    }
+    .box{
+        display: flex;
+    }
+    .container{
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 40px;
+        order: 2;
+    }
+    .mainphoto{
+        width: 90%;
+    }
+
+}
